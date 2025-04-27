@@ -30,11 +30,11 @@ def open_note_file(file_path):
         print(note_file.read())
 
 def main():
-    notes_directory = "D:\\github\\notes"  # Replace with your notes directory
-    note_file = choose_txt_file(notes_directory)  # Choose note file
+    notes_directory = "D:\\github\\notes"  
+    note_file = choose_txt_file(notes_directory)  
     if note_file:
-        file_path = os.path.join(notes_directory, note_file)  # Get full file path
-        open_note_file(file_path)  # Open and display the note
+        file_path = os.path.join(notes_directory, note_file)  
+        open_note_file(file_path)  
 
 if __name__ == "__main__":
     main()

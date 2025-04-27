@@ -37,11 +37,10 @@ def write_note_to_text_file(file_path):
     print(f"Note saved to {file_path}")
 
 def main():
-    # Path to the directory where text files will be stored
-    text_directory = "D:\\github\\notes"  # Replace with your actual directory
-    text_file = choose_text_file(text_directory)  # Choose or create text file
-    file_path = os.path.join(text_directory, text_file)  # Get full file path
-    write_note_to_text_file(file_path)  # Write the note to the text file
+    text_directory = "D:\\github\\notes"  
+    text_file = choose_text_file(text_directory)  
+    file_path = os.path.join(text_directory, text_file)  
+    write_note_to_text_file(file_path)  
 
 if __name__ == "__main__":
     main()
