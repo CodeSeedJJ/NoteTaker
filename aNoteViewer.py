@@ -25,8 +25,11 @@ def choose_txt_file(directory):
 
 def open_note_file(file_path):
     """Open and display the contents of the selected note file."""
+    file_name = os.path.basename(file_path)  # Get the file name without the path
+    green_color = "\033[92m"  # ANSI escape code for green text
+    reset_color = "\033[0m"  # ANSI escape code to reset color
     with open(file_path, 'r') as note_file:
-        print(f"\nOpening note: {file_path}\n")
+        print(f"\nOpening note: {green_color}{file_name}{reset_color}\n")
         print(note_file.read())
 
 def main():
